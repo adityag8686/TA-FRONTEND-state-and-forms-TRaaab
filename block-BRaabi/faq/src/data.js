@@ -19,3 +19,5 @@ let questions = [
         'This program follows a blended approach. Students can move at their own pace, however they will be matched with peers learning same concepts.',
     },
   ];
+
+  export default questions

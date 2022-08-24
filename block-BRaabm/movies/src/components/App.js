@@ -1,5 +1,5 @@
 import React from "react";
-import MovieList from './Movie';
+import MovieList from './Movielist';
 
 function App() {
     return (

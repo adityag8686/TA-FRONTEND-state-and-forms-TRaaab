@@ -9,7 +9,7 @@ class Billing extends React.Component{
             city: '',
             country: '',
 
-        copy: false,
+        isCopy: false,
 
         shipping: {
             address: '',
@@ -22,13 +22,13 @@ class Billing extends React.Component{
 
     copyBilling = ({ target }) => {
         if (target.checked) {
-            this.setState({ copy: true });
+            this.setState({ isCopy: true });
             this.state.shipping.address = this.state.address;
             this.state.shipping.zip = this.state.zip;
             this.state.shipping.city = this.state.city;
             this.state.shipping.country = this.state.country;
         } else {
-            this.setState({ copy: false });
+            this.setState({ isCopy: false });
             this.state.shipping.address = '';
             this.state.shipping.zip = '';
             this.state.shipping.city = '';
